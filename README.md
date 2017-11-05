@@ -1,6 +1,6 @@
-# Boilerplate theme [![](https://badge.fury.io/js/jsonresume-theme-boilerplate.svg)](https://www.npmjs.org/package/jsonresume-theme-boilerplate)
+# Papirus theme [![](https://badge.fury.io/js/jsonresume-theme-papirus.svg)](https://www.npmjs.org/package/jsonresume-theme-papirus)
 
-This is the boilerplate theme for [JSON Resume](http://jsonresume.org/).
+This is the papirus theme for [JSON Resume](http://jsonresume.org/).
 
 ## Getting started
 
@@ -30,51 +30,33 @@ Go ahead and install it:
 sudo npm install -g resume-cli
 ```
 
-### Download theme
+### Install theme
 
-Clone the repository
+Install the theme by typing
 ```bash
-git clone https://github.com/konalexiou/jsonresume-theme-papirus
+npm install -g jsonresume-theme-thin
 ```
 
-### Install npm packages
+### Work on your resume
 
-We need to install the dependencies. `cd` into the theme folder we just downloaded and run:
+If you don't already have your json resume you can make in online by visiting:
+http://registry.jsonresume.org/
+
+### Publish json resume
+
+If you want to publish your resume, first copy your resume.json and then run:
 
 ```bash
-sudo npm install
+resume publish --theme=papirus
 ```
 
-This will read the local `package.json` and install the packages listed under `dependencies`.
+### Export json resume in PDF
 
-### Serve theme
+If you want to publish your resume, first copy your resume.json and then run:
 
-While inside the theme folder, simply run:
-
+```bash
+resume export resume.pdf --theme=papirus
 ```
-resume serve
-```
-
-You should now see this message:
-
-```
-Preview: http://localhost:4000
-Press ctrl-c to stop
-```
-
-Congratulations, you've made it!
-
-## Deployment
-
-If you are familar with NPM, you should be done with this in no time.
-
-If you already have an NPM account, you can run `npm login` and enter your username and password. If not, you can run `npm adduser` and fill in the proper fields.
-
-If you changed the dependencies or added new ones, you'll want to run `npm install` again, and just to make sure, run `npm update` to get the latest version of each dependency.
-
-When you are done with that, you may go into your package.json, and edit the version number. When all of the above is finished, you may run `npm publish` to release your theme to the public. Now everyone can use your theme with their resume.
-
-When updating your theme, you'll need to change the version number and run `npm publish` again.
 
 ## License
 

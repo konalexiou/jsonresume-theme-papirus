@@ -1,0 +1,569 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+		<title>Richard Hendriks</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+		body {
+	background: #E5DED4;
+	font: 15px Arial, Helvetica, sans-serif;
+	line-height: 1.4;
+	color: #929292;
+}
+
+.container{
+	margin: 0 auto;
+	padding: 10%;
+}
+
+#resume{
+	border-radius: 5px;
+	border: 1px solid #C7C7C7;
+	overflow: hidden;
+}
+
+section{
+	margin-bottom: 5rem;
+}
+
+[class^="section-"] > .title {
+  text-transform: uppercase;
+  padding: 15px 0;
+  margin: 0;
+}
+[class^="section-"] > .title .title-icon,
+[class^="section-"] > .title span {
+  display: inline-block;
+  vertical-align: middle;
+}
+[class^="section-"] > .title span {
+  margin-left: 2px;
+}
+[class^="section-"] > .title .title-icon {
+  background-color: whitesmoke;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.4rem 0.45rem;
+}
+
+/* Sidebar */
+.sidebar{
+	padding: 2rem;
+	background: #333438;
+	margin-bottom: -99999px;
+	padding-bottom: 99999px;
+}
+.sidebar, .sidebar h1, .sidebar h2{
+	color: #ffffff;
+}
+.sidebar h2{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+	font-weight: bold;
+	margin-top: 5rem;
+}
+.avatar{
+	margin: 5rem 0;
+	text-align: center;
+}
+.avatar img{
+	width: 90%;
+}
+.section-education .item{
+	margin-bottom: 3rem;
+}
+.section-education .studyTitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.section-education .courses{
+	font-size: 1.2rem;
+}
+.section-education ul.courses {
+  list-style-type: none;
+	margin: 0.5rem 0 0.5rem 0;
+	padding: 0;
+}
+.section-education .ul.courses li{
+	margin:0;
+}
+.section-education .institution{
+	font-size: 1.2rem;
+}
+.section-education .date{
+	font-size: 1.2rem;
+}
+.sidebar a:link, .sidebar a:hover, .sidebar a:visited{
+	text-decoration: none;
+	color: #fff;
+}
+
+/* Content */
+.content{
+	padding: 5rem;
+	background: #FFFFFF;
+	margin-bottom: -99999px;
+	padding-bottom: 99999px;
+}
+.content h1 {
+  color: #3C3C3C;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 1.0rem;
+	font-weight: bold;
+}
+.content h2{
+	color: #6D6D6D;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+	font-weight: bold;
+	margin-top: 5rem;
+}
+.content a:link, .content a:hover, .content a:visited{
+	text-decoration: none;
+	color: #6D6D6D;
+}
+
+/* Sections */
+.section-name{
+	margin: 5rem 0 10rem 0;
+}
+.section-name h2{
+	color: #6D6D6D;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+	font-weight: bold;
+	margin-top: 5rem;
+}
+
+.section-summary{
+	text-align: justify;
+}
+
+.section-work .item{
+	margin-bottom: 2.5rem;
+}
+.section-work .item .position{
+	font-weight: bold;
+	color: #333438;
+	text-transform: uppercase;
+}
+.section-work .item .company {
+    padding: 0.5rem 0 0.5rem 0;
+		color: #6D6D6D;
+		font-weight: bold;
+}
+.section-work .item .summary, .section-work .item .highlights {
+    font-style: italic;
+		text-align: justify;
+}
+
+.section-volunteer .item{
+	margin-bottom: 2.5rem;
+}
+.section-volunteer .item .position{
+	font-weight: bold;
+	color: #333438;
+	text-transform: uppercase;
+}
+.section-volunteer .item .company {
+    padding: 0.5rem 0 0.5rem 0;
+		color: #6D6D6D;
+		font-weight: bold;
+}
+.section-volunteer .item .summary, .section-volunteer .item .highlights {
+    font-style: italic;
+		text-align: justify;
+}
+
+
+.section-publications .item{
+	margin-bottom: 2.5rem;
+}
+.section-publications .item .name{
+	font-weight: bold;
+	color: #333438;
+	text-transform: uppercase;
+}
+.section-publications .item .publication {
+    padding: 0.5rem 0 0.5rem 0;
+		color: #6D6D6D;
+		font-weight: bold;
+}
+.section-publications .item .summary, .section-publications .item .highlights {
+    font-style: italic;
+		text-align: justify;
+}
+
+
+.section-awards .item .title{
+	font-weight: bold;
+	color: #333438;
+}
+.section-awards .item .date, .section-awards .item .awarder{
+	font-weight: normal;
+	color: #929292;
+}
+.section-awards .item .summary{
+	font-weight: normal;
+	font-style: italic;
+	text-align: justify;
+}
+
+.section-languages .item .language{
+	font-weight: bold;
+	color: #333438;
+}
+.section-languages .item .fluency{
+	font-weight: normal;
+	color: #929292;
+}
+
+.section-interests .title{
+	font-weight: bold;
+}
+.section-interests .item {
+  margin: 0.8rem 0 0.8rem 0;
+  line-height: 1.9rem;
+}
+
+.section-skills .item {
+  margin-bottom: 1rem;
+}
+
+
+.section-contact .fa {
+  padding: 0.8rem 0 0 0;
+	background: #fff;
+	color: #333438;
+	border-radius: 100rem;
+	width: 3rem;
+	height: 3rem;
+	text-align: center;
+	margin: -0.4rem 0.8rem 0.8rem 0.5rem;
+	float: left;
+}
+
+.section-contact ul.contact{
+	list-style-type: none;
+	margin: 0.5rem 0 0.5rem 0;
+	padding: 0;
+}
+.section-contact ul.contact li{
+	margin: 1rem 0 1rem 0;
+}
+
+.section-contact ul.profiles{
+	list-style-type: none;
+	margin: 4rem 0 0.5rem 0;
+	padding: 0;
+}
+.section-contact ul.profiles li{
+	margin: 1rem 0 1rem 0;
+}
+
+		</style>
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="row" id="resume">
+				<div class="col-sm-4 sidebar">
+					    <section class="section-basic">
+					    </section>
+					    <section class="section-contact">
+					        <h2 class="title">
+					            <span class="">Contact</span>
+					        </h2>
+					        <ul class="contact">
+					                <li class="icon-item clearfix">
+					                    <i class="fa fa-map-marker"></i>
+					                    <span class="">
+					                    2712 Broadway St
+					                        CA 94115
+					                        San Francisco
+					                        California
+					                        US
+					                </span>
+					                </li>
+					                <li class="icon-item clearfix">
+					                    <i class="fa fa-envelope "></i>
+					                    <a href="mailto:richard.hendriks@mail.com">richard.hendriks@mail.com</a>
+					                </li>
+					                <li class="icon-item clearfix">
+					                    <i class="fa fa-phone "></i>
+					                    <a href="tel:(912) 555-4321">(912) 555-4321</span>
+					                </li>
+					                <li class="icon-item clearfix">
+					                    <i class="fa fa-link "></i>
+					                    <a href="http://richardhendricks.com" target="_blank">
+					                        http://richardhendricks.com
+					                    </a>
+					                </li>
+					        </ul>
+					            <ul class="profiles">
+					                    <li class="icon-item clearfix">
+					                        <i class="fa fa-twitter "></i>
+					                        <a href="" target="_blank">
+					                          
+					                        </a>
+					                    </li>
+					                    <li class="icon-item clearfix">
+					                        <i class="fa fa-soundcloud "></i>
+					                        <a href="https://soundcloud.com/dandymusicnl" target="_blank">
+					                          https://soundcloud.com/dandymusicnl
+					                        </a>
+					                    </li>
+					            </ul>
+					    </section>
+					<section class="section-education">
+						<h2 class="title">
+						    <span class="">Education</span>
+						</h2>
+						<div class="item">
+							<div class="studyTitle">
+								<span class="studyType">
+									Bachelor
+								</span>
+								<span class="area">
+									Information Technology
+								</span>
+								<span class="gpa">
+									<span class="badge"> 4.0 </span>
+								</span>
+							</div>
+							<ul class="courses">
+								<li>DB1101 - Basic SQL</li>
+								<li>CS2011 - Java Introduction</li>
+							</ul>
+							<div class="institution">
+								University of Oklahoma
+							</div>
+							<div class="date">
+								<span class="startDate">
+									2011
+								</span>
+								<span class="endDate">
+									- 2014
+								</span>
+							</div>
+						</div>
+					</section>
+					<section class="section-skills">
+						<h2 class="title">
+						    <span class="">Skills</span>
+						</h2>
+						<div class="item">
+							<div class="name">
+								Web Development
+							</div>
+							<div class="keywords">
+								<span class="label label-default">HTML</span>
+								<span class="label label-default">CSS</span>
+								<span class="label label-default">Javascript</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="name">
+								Compression
+							</div>
+							<div class="keywords">
+								<span class="label label-default">Mpeg</span>
+								<span class="label label-default">MP4</span>
+								<span class="label label-default">GIF</span>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="col-sm-8 content">
+						<section class="section-name">
+							<h1>Richard Hendriks</h1>
+							<h2>Programmer</h2>
+						</section>
+						<section class="section-summary">
+							<h2 class="title">
+							    <span class="">Summary</span>
+							</h2>
+							Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!
+						</section>
+					<section class="section-work">
+						<h2 class="title">
+						    <span class="">Experience</span>
+						</h2>
+						<div class="item">
+							<div class="position">
+								CEO/President
+							</div>
+							<div class="company">
+								<span class="name">
+									Pied Piper
+								</span>
+								<span class="website">
+									| <a target="_blank" href="http://piedpiper.com">http://piedpiper.com</a>
+								</span>
+								<span class="date">
+									|
+									<span class="startDate">
+										Dec 2013
+									</span>
+									<span class="endDate">
+										- Dec 2014
+									</span>
+									<span class="diffDate">
+										(1 year)
+									</span>
+								</span>
+							</div>
+							<div class="summary">
+								<p>Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p>
+							</div>
+							<ul class="highlights">
+								<li>Build an algorithm for artist to detect if their music was violating copy right infringement laws</li>
+								<li>Successfully won Techcrunch Disrupt</li>
+								<li>Optimized an algorithm that holds the current world record for Weisman Scores</li>
+							</ul>
+						</div>
+					</section>
+					<section class="section-volunteer">
+						<h2 class="title">
+						    <span class="">Volunteer</span>
+						</h2>
+						<div class="item">
+							<div class="position">
+								Teacher
+							</div>
+							<div class="company">
+								<span class="name">
+									CoderDojo
+								</span>
+								<span class="website">
+									| <a href="http://coderdojo.com/" target="_blank">http://coderdojo.com/</a>
+								</span>
+							<span class="date">
+								| <span class="startDate">
+									Jan 2012
+								</span>
+								<span class="endDate">
+									- Jan 2013
+								</span>
+								<span class="diffDate">
+									(1 year)
+								</span>
+							</span>
+							</div>
+							<div class="summary">
+								<p>Global movement of free coding clubs for young people.</p>
+							</div>
+							<ul class="highlights">
+								<li>Awarded &#x27;Teacher of the Month&#x27;</li>
+							</ul>
+						</div>
+					</section>
+					<section class="section-awards">
+						<h2 class="title">
+						    <span class="">Awards</span>
+						</h2>
+						<ul>
+							<li class="item">
+								<div class="title">
+									Digital Compression Pioneer Award
+									<span class="date">
+										| Nov 2014
+									</span>
+									<span class="awarder">
+										| Techcrunch
+									</span>
+								</div>
+								<div class="summary">
+									<p>There is no spoon.</p>
+								</div>
+							</li>
+						</ul>
+					</section>
+					<section class="section-publications">
+						<h2 class="title">
+						    <span class="">Publications</span>
+						</h2>
+						<div class="item">
+							<div class="name">
+								Video compression for 3d media
+							</div>
+					
+							<div class="publication">
+								<span class="publisher">
+									Hooli
+								</span>
+								<span class="website">
+									| <a href="http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)" target="_blank">Link</a>
+								</span>
+								<span class="releaseDate">
+									| 2014-10-01
+								</span>
+							</div>
+					
+							<div class="summary">
+								<p>Innovative middle-out compression algorithm that changes the way we store data.</p>
+							</div>
+						</div>
+					</section>
+					<section class="section-languages">
+						<h2 class="title">
+						    <span class="">Languages</span>
+						</h2>
+						<ul>
+							<li class="item">
+								<div class="language">
+									English
+									<span class="fluency">
+										| <em>Native speaker</em>
+									</apn>
+								</div>
+							</li>
+						</ul>
+					</section>
+					<section class="section-interests">
+						<h2 class="title">
+						    <span class="">Interests</span>
+						</h2>
+						<ul>
+							<li class="item">
+								<div class="name">
+									Wildlife
+								</div>
+								<div class="keywords">
+									<span class="label label-default">Ferrets</span>
+									<span class="label label-default">Unicorns</span>
+								</div>
+							</li>
+						<ul>
+					</section>
+					<section class="section-references">
+						<h2 class="title">
+						    <span class="">References</span>
+						</h2>
+						<div class="item">
+							<blockquote class="reference">
+								It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.
+							</blockquote>
+							<div class="name">
+								— Erlich Bachman
+							</div>
+						</div>
+					</section>
+				</div>
+		</div>
+
+	</body>
+</html>

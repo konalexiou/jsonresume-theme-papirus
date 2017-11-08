@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-papirus",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Papirus theme for JSON Resume",
   "author": "Konstantinos Alexiou",
   "main": "index.js",

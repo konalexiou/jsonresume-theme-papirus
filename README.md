@@ -2,6 +2,9 @@
 
 This is the papirus theme for [JSON Resume](http://jsonresume.org/).
 
+
+![Preview of papirus theme](https://raw.githubusercontent.com/konalexiou/jsonresume-theme-elegant/master/papirus.png)
+
 ## Getting started
 
 To get started with theme development, this is what you'll need:
@@ -34,7 +37,7 @@ sudo npm install -g resume-cli
 
 Install the theme by typing
 ```bash
-npm install -g jsonresume-theme-thin
+npm install -g jsonresume-theme-papirus
 ```
 
 ### Work on your resume

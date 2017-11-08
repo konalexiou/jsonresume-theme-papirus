@@ -5,33 +5,29 @@
             {{#if resume.basics.location}}
                 <li class="icon-item clearfix">
                     <i class="fa fa-map-marker"></i>
-                    <span class="">
                     {{resume.basics.location.address}}
                         {{resume.basics.location.postalCode}}
                         {{resume.basics.location.city}}
                         {{resume.basics.location.region}}
                         {{resume.basics.location.countryCode}}
-                </span>
                 </li>
             {{/if}}
             {{#if resume.basics.email}}
                 <li class="icon-item clearfix">
                     <i class="fa fa-envelope "></i>
-                    <a href="mailto:{{resume.basics.email}}">{{resume.basics.email}}</a>
+                    {{resume.basics.email}}
                 </li>
             {{/if}}
             {{#if resume.basics.phone}}
                 <li class="icon-item clearfix">
                     <i class="fa fa-phone "></i>
-                    <a href="tel:{{resume.basics.phone}}">{{resume.basics.phone}}</span>
+                    {{resume.basics.phone}}
                 </li>
             {{/if}}
             {{#if resume.basics.website}}
                 <li class="icon-item clearfix">
                     <i class="fa fa-link "></i>
-                    <a href="{{resume.basics.website}}" target="_blank">
-                        {{resume.basics.website}}
-                    </a>
+                    {{resume.basics.website}}
                 </li>
             {{/if}}
         </ul>
@@ -40,9 +36,7 @@
                 {{#each resume.basics.profiles}}
                     <li class="icon-item clearfix">
                         <i class="fa fa-{{networkIcon network}} "></i>
-                        <a href="{{url}}" target="_blank">
-                          {{url}}
-                        </a>
+                        <span>{{wordWrap url}}</span>
                     </li>
                 {{/each}}
             </ul>

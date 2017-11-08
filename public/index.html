@@ -1,0 +1,1248 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+		<title>Konstantinos Alexiou</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+		body {
+  background: #E5DED4;
+  font: 15px Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  color: #929292;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 10%;
+}
+
+#resume {
+  border-radius: 5px;
+  border: 1px solid #C7C7C7;
+  overflow: hidden;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+[class^="section-"] > .title {
+  text-transform: uppercase;
+  padding: 15px 0;
+  margin: 0;
+}
+
+[class^="section-"] > .title .title-icon,
+[class^="section-"] > .title span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+[class^="section-"] > .title span {
+  margin-left: 2px;
+}
+
+[class^="section-"] > .title .title-icon {
+  background-color: whitesmoke;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.4rem 0.45rem;
+}
+
+/* Sidebar */
+.sidebar {
+  padding: 2rem;
+  background: #333438 !important;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.sidebar, .sidebar h1, .sidebar h2 {
+  color: #ffffff !important;
+}
+
+.sidebar h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  margin-top: 5rem;
+}
+
+.avatar {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.avatar img {
+  width: 90%;
+}
+
+.section-education .item {
+  margin-bottom: 3rem;
+}
+
+.section-education .studyTitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.section-education .courses {
+  font-size: 1.2rem;
+}
+.section-education ul.courses {
+  list-style-type: none;
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0;
+}
+
+.section-education .ul.courses li {
+  margin:0;
+}
+
+.section-education .institution {
+  font-size: 1.2rem;
+}
+
+.section-education .date {
+  font-size: 1.2rem;
+}
+
+.sidebar a:link, .sidebar a:hover, .sidebar a:visited {
+  text-decoration: none;
+  color: #ffffff !important;
+}
+
+/* Content */
+.content {
+  padding: 5rem;
+  background: #FFFFFF;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.content h1 {
+  color: #3C3C3C;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 1.0rem;
+  font-weight: bold;
+}
+
+.content h2 {
+  color: #6D6D6D;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  margin-top: 5rem;
+}
+
+.content a:link, .content a:hover, .content a:visited {
+  text-decoration: none;
+  color: #6D6D6D;
+}
+
+/* Sections */
+.section-name {
+  margin: 5rem 0 10rem 0;
+}
+
+.section-name h2 {
+  color: #6D6D6D;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  margin-top: 5rem;
+}
+
+.section-summary {
+  text-align: justify;
+}
+
+.section-work .item {
+  margin-bottom: 2.5rem;
+}
+
+.section-work .item .position {
+  font-weight: bold;
+  color: #333438;
+  text-transform: uppercase;
+}
+
+.section-work .item .company {
+    padding: 0.5rem 0 0.5rem 0;
+    color: #6D6D6D;
+    font-weight: bold;
+}
+
+.section-work .item .summary, .section-work .item .highlights {
+    font-style: italic;
+    text-align: justify;
+}
+
+.section-volunteer .item {
+  margin-bottom: 2.5rem;
+}
+
+.section-volunteer .item .position {
+  font-weight: bold;
+  color: #333438;
+  text-transform: uppercase;
+}
+
+.section-volunteer .item .company {
+    padding: 0.5rem 0 0.5rem 0;
+    color: #6D6D6D;
+    font-weight: bold;
+}
+
+.section-volunteer .item .summary, .section-volunteer .item .highlights {
+    font-style: italic;
+    text-align: justify;
+}
+
+
+.section-publications .item {
+  margin-bottom: 2.5rem;
+}
+
+.section-publications .item .name {
+  font-weight: bold;
+  color: #333438;
+  text-transform: uppercase;
+}
+
+.section-publications .item .publication {
+    padding: 0.5rem 0 0.5rem 0;
+    color: #6D6D6D;
+    font-weight: bold;
+}
+
+.section-publications .item .summary, .section-publications .item .highlights {
+    font-style: italic;
+    text-align: justify;
+}
+
+
+.section-awards .item .title {
+  font-weight: bold;
+  color: #333438;
+}
+
+.section-awards .item .date, .section-awards .item .awarder {
+  font-weight: normal;
+  color: #929292;
+}
+
+.section-awards .item .summary {
+  font-weight: normal;
+  font-style: italic;
+  text-align: justify;
+}
+
+.section-languages .item .language {
+  font-weight: bold;
+  color: #333438;
+}
+
+.section-languages .item .fluency {
+  font-weight: normal;
+  color: #929292;
+}
+
+.section-interests .title {
+  font-weight: bold;
+}
+
+.section-interests .item {
+  margin: 0.8rem 0 0.8rem 0;
+  line-height: 1.9rem;
+}
+
+.section-skills .item {
+  margin-bottom: 1rem;
+}
+
+
+.section-contact .fa {
+  padding: 0.8rem 0 0 0;
+  background: #fff;
+  color: #333438;
+  border-radius: 100rem;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  margin: -0.4rem 0.8rem 0.8rem 0.5rem;
+  float: left;
+}
+
+.section-contact ul.contact {
+  list-style-type: none;
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0;
+}
+
+.section-contact ul.contact li {
+  margin: 1rem 0 1rem 0;
+}
+
+.section-contact ul.profiles {
+  list-style-type: none;
+  margin: 4rem 0 0.5rem 0;
+  padding: 0;
+}
+
+.section-contact ul.profiles li {
+  margin: 1rem 0 1rem 0;
+}
+
+/* Print */
+@media print {
+  body {
+    font: 10px Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    color: #929292 !important;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  #resume {
+    overflow: hidden;
+    border: none !important;
+  }
+
+  section {
+    margin-bottom: 2.5rem;
+  }
+
+  [class^="section-"] > .title {
+    text-transform: uppercase;
+    padding: 0.7rem 0;
+    margin: 0;
+  }
+
+  [class^="section-"] > .title .title-icon,
+  [class^="section-"] > .title span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  [class^="section-"] > .title span {
+    margin-left: 2px;
+  }
+
+  [class^="section-"] > .title .title-icon {
+    background-color: whitesmoke;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.4rem 0.45rem;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    padding: 2rem;
+    background: #333438 !important;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+		color: #ffffff !important;
+  }
+
+  .sidebar, .sidebar h1, .sidebar h2 {
+    color: #ffffff !important;
+  }
+
+  .sidebar h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+    margin-top: 5rem;
+		color: #ffffff !important;
+  }
+
+  .sidebar h2.title span {
+    color: #ffffff !important;
+}
+
+  .avatar {
+    margin: 2rem 0 2rem 1rem;
+    text-align: center;
+  }
+
+  .avatar img {
+    width: 85%;
+  }
+
+  .section-education .item {
+    margin-bottom: 3rem;
+		color: #ffffff !important;
+  }
+
+  .section-education .studyTitle span{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+		color: #ffffff !important;
+  }
+
+  .section-education .studyTitle span.badge{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.0rem;
+		color: #ffffff !important;
+    background: #939393 !important;
+  }
+
+  .section-education .courses {
+    font-size: 1.1rem;
+		color: #ffffff !important;
+  }
+
+  .section-education ul.courses {
+    list-style-type: none;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 0;
+  }
+
+  .section-education .ul.courses li {
+    margin:0;
+		color: #ffffff !important;
+  }
+
+  .section-education .institution {
+    font-size: 1.0rem;
+		color: #ffffff !important;
+  }
+
+  .section-education .date span{
+    font-size: 1.0rem;
+		color: #ffffff !important;
+  }
+
+  .sidebar a:link, .sidebar a:hover, .sidebar a:visited {
+    text-decoration: none;
+		color: #ffffff !important;
+  }
+
+  /* Content */
+  .content {
+    padding: 3rem 5rem 3rem 2rem;
+    background: #FFFFFF !important;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+  }
+
+  .content h1 {
+    color: #3C3C3C !important;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 1.0rem;
+    font-weight: bold;
+  }
+
+  .content h2 {
+    color: #6D6D6D !important;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+
+  .content a:link, .content a:hover, .content a:visited {
+    text-decoration: none;
+    color: #6D6D6D !important;
+  }
+
+  /* Sections */
+  .section-name {
+    margin: 1rem 0 5rem 0;
+  }
+
+  .section-name h2 {
+    color: #6D6D6D !important;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+    margin-top: 3rem;
+  }
+
+  .section-summary {
+    text-align: justify;
+  }
+
+  .section-work .item {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-work .item .position {
+    font-weight: bold;
+    color: #333438 !important;
+    text-transform: uppercase;
+  }
+
+  .section-work .item .company {
+      padding: 0.5rem 0 0.5rem 0;
+      color: #6D6D6D !important;
+      font-weight: bold;
+  }
+
+  .section-work .item .summary, .section-work .item .highlights {
+      font-style: italic;
+      text-align: justify;
+  }
+
+  .section-volunteer .item {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-volunteer .item .position {
+    font-weight: bold;
+    color: #333438 !important;
+    text-transform: uppercase;
+  }
+
+  .section-volunteer .item .company {
+      padding: 0.5rem 0 0.5rem 0;
+      color: #6D6D6D !important;
+      font-weight: bold;
+  }
+
+  .section-volunteer .item .summary, .section-volunteer .item .highlights {
+      font-style: italic;
+      text-align: justify;
+  }
+
+
+  .section-publications .item {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-publications .item .name {
+    font-weight: bold;
+    color: #333438 !important;
+    text-transform: uppercase;
+  }
+
+  .section-publications .item .publication {
+      padding: 0.5rem 0 0.5rem 0;
+      color: #6D6D6D !important;
+      font-weight: bold;
+  }
+
+  .section-publications .item .summary, .section-publications .item .highlights {
+      font-style: italic;
+      text-align: justify;
+  }
+
+
+  .section-awards .item .title {
+    font-weight: bold;
+    color: #333438 !important;
+  }
+
+  .section-awards .item .date, .section-awards .item .awarder {
+    font-weight: normal;
+    color: #929292 !important;
+  }
+
+  .section-awards .item .summary {
+    font-weight: normal;
+    font-style: italic;
+    text-align: justify;
+  }
+
+  .section-languages .item .language {
+    font-weight: bold;
+    color: #333438 !important;
+  }
+
+  .section-languages .item .fluency {
+    font-weight: normal;
+    color: #929292 !important;
+  }
+
+  .section-interests .title {
+    font-weight: bold;
+  }
+
+  .section-interests .item {
+    margin: 0.2rem 0 0.0rem 0;
+    line-height: 1.4rem;
+  }
+
+  .section-skills .item {
+    margin-bottom: 1rem;
+  }
+
+  .section-skills .item .name {
+    color: #ffffff !important;
+  }
+
+	.section-skills .item .keywords .span {
+		color: #ffffff !important;
+		background: #929292 !important;
+	}
+
+  .section-skills .keywords span.label {
+      color: #000 !important;
+      background: #929292 !important;
+      line-height: 1.7rem;
+  }
+
+
+  .section-contact .fa {
+    padding: 0.5rem 0 0 0;
+    background: #ffffff  !important;
+    color: #333438 !important;
+    border-radius: 100rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    text-align: center;
+    margin: -0.4rem 0.8rem 0.8rem 0.5rem;
+    float: left;
+  }
+
+  .section-contact ul.contact {
+    list-style-type: none;
+    margin: 0.2rem 0 0.2rem 0;
+    padding: 0;
+  }
+
+  .section-contact ul.contact li {
+    margin: 0.5rem 0 0.5rem 0;
+		color: #ffffff !important;
+  }
+
+  .section-contact ul.profiles {
+    list-style-type: none;
+    margin: 4rem 0 0.5rem 0;
+    padding: 0;
+  }
+
+  .section-contact ul.profiles li {
+    margin: 0.5rem 0 0.5rem 0;
+		color: #ffffff !important;
+  }
+
+  .section-contact ul.contact li span,.section-contact ul.profiles li span {
+      word-wrap: break-word;
+      white-space: pre-wrap;
+      color: #ffffff !important;
+  }
+
+}
+
+		</style>
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="row" id="resume">
+				<div class="col-xs-4 sidebar">
+					    <section class="section-basic">
+					            <div class="avatar">
+					                <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/000/1a5/115/14e7488.jpg" alt="Konstantinos Alexiou" class="img-circle">
+					            </div>
+					    </section>
+					    <section class="section-contact">
+					        <h2 class="title">
+					            <span class="">Contact</span>
+					        </h2>
+					        <ul class="contact">
+					                <li class="icon-item clearfix">
+					                    <i class="fa fa-map-marker"></i>
+					                    
+					                        
+					                        Thessaloniki
+					                        
+					                        GR
+					                </li>
+					                <li class="icon-item clearfix">
+					                    <i class="fa fa-envelope "></i>
+					                    konalexiou@gmail.com
+					                </li>
+					                <li class="icon-item clearfix">
+					                    <i class="fa fa-phone "></i>
+					                    +30 6947849465
+					                </li>
+					                <li class="icon-item clearfix">
+					                    <i class="fa fa-link "></i>
+					                    https://konalexiou.net
+					                </li>
+					        </ul>
+					            <ul class="profiles">
+					                    <li class="icon-item clearfix">
+					                        <i class="fa fa-linkedin "></i>
+					                        <span>https://www.linkedin.com/ in/ konalexiou</span>
+					                    </li>
+					                    <li class="icon-item clearfix">
+					                        <i class="fa fa-github "></i>
+					                        <span>http://github.com/ konalexiou</span>
+					                    </li>
+					                    <li class="icon-item clearfix">
+					                        <i class="fa fa-stack-overflow "></i>
+					                        <span>https://stackoverflow.com/ story/ konalexiou</span>
+					                    </li>
+					                    <li class="icon-item clearfix">
+					                        <i class="fa fa-twitter "></i>
+					                        <span>http://twitter.com/ konalexiou</span>
+					                    </li>
+					                    <li class="icon-item clearfix">
+					                        <i class="fa fa-facebook "></i>
+					                        <span>http://facebook.com/ konalex</span>
+					                    </li>
+					            </ul>
+					    </section>
+					<section class="section-education">
+						<h2 class="title">
+						    <span class="">Education</span>
+						</h2>
+						<div class="item">
+							<div class="studyTitle">
+								<span class="studyType">
+									Msc
+								</span>
+								<span class="area">
+									Information and Communication Technology (ICT)
+								</span>
+								<span class="gpa">
+									<span class="badge"> 9.3 </span>
+								</span>
+							</div>
+							<div class="institution">
+								International Hellenic University (I.H.U)
+							</div>
+							<div class="date">
+								<span class="startDate">
+									2011
+								</span>
+								<span class="endDate">
+									- 2012
+								</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="studyTitle">
+								<span class="studyType">
+									Bachelor
+								</span>
+								<span class="area">
+									Physics
+								</span>
+								<span class="gpa">
+									<span class="badge"> 6.5 </span>
+								</span>
+							</div>
+							<div class="institution">
+								Aristotle University of Thessaloniki (A.U.TH)
+							</div>
+							<div class="date">
+								<span class="startDate">
+									2000
+								</span>
+								<span class="endDate">
+									- 2009
+								</span>
+							</div>
+						</div>
+					</section>
+					<section class="section-skills">
+						<h2 class="title">
+						    <span class="">Skills</span>
+						</h2>
+						<div class="item">
+							<div class="name">
+								Software
+							</div>
+							<div class="keywords">
+								<span class="label label-default">PHP</span>
+								<span class="label label-default">Laravel</span>
+								<span class="label label-default">Codeigniter</span>
+								<span class="label label-default">Javascript</span>
+								<span class="label label-default">React</span>
+								<span class="label label-default">jQuery</span>
+								<span class="label label-default">Python</span>
+								<span class="label label-default">Django</span>
+								<span class="label label-default">Flask</span>
+								<span class="label label-default">Java</span>
+								<span class="label label-default">C</span>
+								<span class="label label-default">C++</span>
+								<span class="label label-default">C#</span>
+								<span class="label label-default">Objective C</span>
+								<span class="label label-default">Node.js</span>
+								<span class="label label-default">Linux Bash</span>
+								<span class="label label-default">Design Patterns</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="name">
+								Web Development
+							</div>
+							<div class="keywords">
+								<span class="label label-default">HTML</span>
+								<span class="label label-default">CSS</span>
+								<span class="label label-default">Bootstrap</span>
+								<span class="label label-default">Javascript</span>
+								<span class="label label-default">React</span>
+								<span class="label label-default">jQuery</span>
+								<span class="label label-default">Wordpress</span>
+								<span class="label label-default">Joomla</span>
+								<span class="label label-default">Grav</span>
+								<span class="label label-default">MySQL</span>
+								<span class="label label-default">MSSQL</span>
+								<span class="label label-default">MongoDB</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="name">
+								Mobile App Development
+							</div>
+							<div class="keywords">
+								<span class="label label-default">Android</span>
+								<span class="label label-default">iOs</span>
+								<span class="label label-default">React Native</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="name">
+								Misc
+							</div>
+							<div class="keywords">
+								<span class="label label-default">Git</span>
+								<span class="label label-default">Gulp</span>
+								<span class="label label-default">Full Stack Developer</span>
+								<span class="label label-default">Linux Bash Scripting</span>
+								<span class="label label-default">Data Mining</span>
+								<span class="label label-default">Artificial Intelligence</span>
+								<span class="label label-default">UML</span>
+								<span class="label label-default">3D Printing</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="name">
+								Electronics
+							</div>
+							<div class="keywords">
+								<span class="label label-default">Electronic Circuits</span>
+								<span class="label label-default">Arduino</span>
+								<span class="label label-default">Raspberry Pi</span>
+								<span class="label label-default">TinkerBoard</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="name">
+								Operating Systems
+							</div>
+							<div class="keywords">
+								<span class="label label-default">Windows</span>
+								<span class="label label-default">Linux</span>
+								<span class="label label-default">Mac</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="name">
+								Design and Image Editing
+							</div>
+							<div class="keywords">
+								<span class="label label-default">Photoshop</span>
+								<span class="label label-default">Adobe Fireworks</span>
+								<span class="label label-default">Adobe Illustrator</span>
+								<span class="label label-default">Adobe inDesign</span>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="col-xs-8 content">
+						<section class="section-name">
+							<h1>Konstantinos Alexiou</h1>
+							<h2>CTO / Lead Software Engineer</h2>
+						</section>
+						<section class="section-summary">
+							<h2 class="title">
+							    <span class="">Summary</span>
+							</h2>
+							CTO with 4 years experience in team management, application research, development and testing. Highly skilled in PHP, Javascript and Python. Problem solver with a demonstrated history of working in the software industry for over 12 years. Electronics, internet of things and 3D printing enthusiast.
+						</section>
+					<section class="section-work">
+						<h2 class="title">
+						    <span class="">Experience</span>
+						</h2>
+						<div class="item">
+							<div class="position">
+								Chief Technical Officer (CTO) / Lead Software Engineer
+							</div>
+							<div class="company">
+								<span class="name">
+									Brainbox
+								</span>
+								<span class="website">
+									| http://www.brainbox.gr
+								</span>
+								<span class="date">
+									|
+									<span class="startDate">
+										Oct 2012
+									</span>
+									<span class="endDate">
+										- Present
+									</span>
+								</span>
+							</div>
+							<div class="summary">
+								<p>Brainbox is active in the field of advanced solutions in the fields of telematics and IT. It is also the largest bike-sharing company in Greece and Cyprus.</p>
+							</div>
+							<ul class="highlights">
+								<li>Development of fully automated Bike Sharing System (communication server, management software, mobile apps, firmware, part of hardware)</li>
+								<li>Development of semi-automated bike sharing system ( software, firmware, hardware )</li>
+								<li>Unattended payment kiosks software</li>
+								<li>Personal assistant / speech recognition / home automation</li>
+								<li>Large scale project management</li>
+								<li>Team management of tehnicians and developers</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="position">
+								Software Engineer
+							</div>
+							<div class="company">
+								<span class="name">
+									Freelancer
+								</span>
+								<span class="date">
+									|
+									<span class="startDate">
+										Jan 2003
+									</span>
+									<span class="endDate">
+										- Present
+									</span>
+								</span>
+							</div>
+							<div class="summary">
+								<p>Web application and mobile app development</p>
+							</div>
+							<ul class="highlights">
+								<li>Patient management software for greek ministry of health</li>
+								<li>Ad exchange system for leading advertising company in Greece</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="position">
+								Sr. Software Engineer
+							</div>
+							<div class="company">
+								<span class="name">
+									SecureShop
+								</span>
+								<span class="website">
+									| http://www.secureshop.gr
+								</span>
+								<span class="date">
+									|
+									<span class="startDate">
+										Jan 2012
+									</span>
+									<span class="endDate">
+										- Oct 2012
+									</span>
+									<span class="diffDate">
+										(9 months)
+									</span>
+								</span>
+							</div>
+							<div class="summary">
+								<p>SecureShop is a leading software company since 2004. It is engaged in research and development of e-commerce applications and secure real-time booking systems.</p>
+							</div>
+							<ul class="highlights">
+								<li>Booking Engine development</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="position">
+								Lead Software Engineer
+							</div>
+							<div class="company">
+								<span class="name">
+									Advanced S.A.
+								</span>
+								<span class="website">
+									| http://www.advance.gr
+								</span>
+								<span class="date">
+									|
+									<span class="startDate">
+										Jan 2011
+									</span>
+									<span class="endDate">
+										- Jan 2012
+									</span>
+									<span class="diffDate">
+										(1 year)
+									</span>
+								</span>
+							</div>
+							<div class="summary">
+								<p>Advanced is a leading advertising company made by industry professionals.</p>
+							</div>
+							<ul class="highlights">
+								<li>Paros island digital advertising (Website, Social media, multimedia etc)</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="position">
+								Sr. Software Engineer
+							</div>
+							<div class="company">
+								<span class="name">
+									SITAM AB
+								</span>
+								<span class="website">
+									| http://www.etelestia.com/
+								</span>
+								<span class="date">
+									|
+									<span class="startDate">
+										Jan 2011
+									</span>
+									<span class="endDate">
+										- Dec 2011
+									</span>
+									<span class="diffDate">
+										(11 months)
+									</span>
+								</span>
+							</div>
+							<div class="summary">
+								<p>Online distance learning programme for fashion and clothing skills.</p>
+							</div>
+							<ul class="highlights">
+								<li>Customer Relationship Management(CRM) Software Development</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="position">
+								First Office Officer
+							</div>
+							<div class="company">
+								<span class="name">
+									Greek Army
+								</span>
+								<span class="website">
+									| http://www.army.gr
+								</span>
+								<span class="date">
+									|
+									<span class="startDate">
+										Feb 2010
+									</span>
+									<span class="endDate">
+										- Nov 2010
+									</span>
+									<span class="diffDate">
+										(9 months)
+									</span>
+								</span>
+							</div>
+							<div class="summary">
+								<p>Greek Armed Forces are the military forces of the Greece.</p>
+							</div>
+							<ul class="highlights">
+								<li>Personel and document management</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="position">
+								Software Engineer
+							</div>
+							<div class="company">
+								<span class="name">
+									Digicube
+								</span>
+								<span class="website">
+									| htttp://www.digicube.gr
+								</span>
+								<span class="date">
+									|
+									<span class="startDate">
+										Jun 2007
+									</span>
+									<span class="endDate">
+										- Feb 2010
+									</span>
+									<span class="diffDate">
+										(2 years 8 months)
+									</span>
+								</span>
+							</div>
+							<div class="summary">
+								<p>Digicube specializes in digital services for archives and collections, as well as processing, managing and promoting them on a corporate network or the internet.</p>
+							</div>
+							<ul class="highlights">
+								<li>Document Management System (DMS) Development</li>
+								<li>Alfresco DMS Module Development</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="position">
+								Tech and Infastructure Support
+							</div>
+							<div class="company">
+								<span class="name">
+									Aristotle University of Thessaloniki (A.U.TH)
+								</span>
+								<span class="website">
+									| http://it.auth.gr
+								</span>
+								<span class="date">
+									|
+									<span class="startDate">
+										Jan 2006
+									</span>
+									<span class="endDate">
+										- Jun 2007
+									</span>
+									<span class="diffDate">
+										(1 year 5 months)
+									</span>
+								</span>
+							</div>
+							<div class="summary">
+								<p>The IT Center of the Aristotle University of Thessaloniki is responsible for operations, development and maintenance of the IT infrastructure. Our goal is to provide modern, cutting-edge electronic services to the academic community of AUTH.</p>
+							</div>
+							<ul class="highlights">
+								<li>e-University system</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="position">
+								Instructor
+							</div>
+							<div class="company">
+								<span class="name">
+									Protoporiako
+								</span>
+								<span class="website">
+									| http://www.protoporiako.gr/
+								</span>
+								<span class="date">
+									|
+									<span class="startDate">
+										Jan 2005
+									</span>
+									<span class="endDate">
+										- Jan 2007
+									</span>
+									<span class="diffDate">
+										(2 years)
+									</span>
+								</span>
+							</div>
+							<div class="summary">
+								<p>Protoporiako is a leading private school in Thessaloniki, Greece.</p>
+							</div>
+							<ul class="highlights">
+								<li>ECDL Expert, Cambridge Website Authoring</li>
+							</ul>
+						</div>
+					</section>
+					<section class="section-awards">
+						<h2 class="title">
+						    <span class="">Awards</span>
+						</h2>
+						<ul>
+							<li class="item">
+								<div class="title">
+									Top of Class
+									<span class="date">
+										| Sep 2012
+									</span>
+									<span class="awarder">
+										| International Hellenic University
+									</span>
+								</div>
+							</li>
+						</ul>
+					</section>
+					<section class="section-languages">
+						<h2 class="title">
+						    <span class="">Languages</span>
+						</h2>
+						<ul>
+							<li class="item">
+								<div class="language">
+									Greek
+									<span class="fluency">
+										| <em>Native speaker</em>
+									</apn>
+								</div>
+							</li>
+							<li class="item">
+								<div class="language">
+									English
+									<span class="fluency">
+										| <em>Proficiency C2</em>
+									</apn>
+								</div>
+							</li>
+						</ul>
+					</section>
+					<section class="section-interests">
+						<h2 class="title">
+						    <span class="">Interests</span>
+						</h2>
+						<ul>
+							<li class="item">
+								<div class="name">
+									Electronics
+								</div>
+								<div class="keywords">
+									<span class="label label-default">Arduino</span>
+									<span class="label label-default">Raspberry Pi</span>
+								</div>
+							</li>
+							<li class="item">
+								<div class="name">
+									Sports
+								</div>
+								<div class="keywords">
+									<span class="label label-default">Basketball</span>
+									<span class="label label-default">Running</span>
+								</div>
+							</li>
+							<li class="item">
+								<div class="name">
+									Movies
+								</div>
+							</li>
+							<li class="item">
+								<div class="name">
+									Books
+								</div>
+							</li>
+						<ul>
+					</section>
+				</div>
+		</div>
+
+	</body>
+</html>

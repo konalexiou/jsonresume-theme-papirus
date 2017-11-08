@@ -1,0 +1,6 @@
+/test/
+/node_modules/
+~*
+.eslintrc.js
+gulpfile.js
+/.idea

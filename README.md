@@ -3,7 +3,7 @@
 This is the papirus theme for [JSON Resume](http://jsonresume.org/).
 
 
-![Preview of papirus theme](https://raw.githubusercontent.com/konalexiou/jsonresume-theme-elegant/master/papirus.png)
+![Preview of papirus theme](https://raw.githubusercontent.com/konalexiou/jsonresume-theme-papirus/master/papirus.png)
 
 ## Getting started
 

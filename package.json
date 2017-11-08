@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-papirus",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Papirus theme for JSON Resume",
   "author": "Konstantinos Alexiou",
   "repository": {
@@ -11,7 +11,8 @@
     "jsonresume",
     "jsonresume-theme",
     "jsonresume-theme-papirus",
-    "papirus"
+    "papirus",
+    "konalexiou"
   ],
   "license": "MIT",
   "dependencies": {

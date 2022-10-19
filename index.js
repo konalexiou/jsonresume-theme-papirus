@@ -95,5 +95,9 @@ function exportPdf (resumeFile, pageFormat) {
 
 module.exports = {
   render: render,
-  exportPdf: exportPdf
+  exportPdf: exportPdf,
+  pdfRenderOptions: {
+    format: "A4",
+    scale: 0.8
+  }
 }

@@ -241,14 +241,27 @@ section {
   text-align: justify;
 }
 
-.section-languages .item .language {
+.section-languages .item {
+  margin-bottom: 1rem;
+}
+
+.section-languages .item .language{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-languages .item .language .tongue {
   font-weight: bold;
-  color: #333438;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  /* color: #333438; */
 }
 
 .section-languages .item .fluency {
   font-weight: normal;
   color: #929292;
+  align-self: flex-end;
 }
 
 .section-interests .title {
@@ -562,9 +575,15 @@ section {
     text-align: justify;
   }
 
-  .section-languages .item .language {
+  .section-languages .item {
+    margin-bottom: 1rem;
+  }
+
+  .section-languages .item .language .tongue {
     font-weight: bold;
+    text-transform: uppercase;
     color: #333438 !important;
+    font-size: 1.3rem;
   }
 
   .section-languages .item .fluency {

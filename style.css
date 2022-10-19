@@ -7,7 +7,7 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 10%;
+  /* padding: 10%; */
 }
 
 #resume {
@@ -241,14 +241,27 @@ section {
   text-align: justify;
 }
 
-.section-languages .item .language {
+.section-languages .item {
+  margin-bottom: 1rem;
+}
+
+.section-languages .item .language{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-languages .item .language .tongue {
   font-weight: bold;
-  color: #333438;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  /* color: #333438; */
 }
 
 .section-languages .item .fluency {
   font-weight: normal;
   color: #929292;
+  align-self: flex-end;
 }
 
 .section-interests .title {
@@ -295,6 +308,30 @@ section {
 
 .section-contact ul.profiles li {
   margin: 1rem 0 1rem 0;
+}
+
+.level {
+  padding-left: 1rem;
+}
+
+.level-beginner:before {
+  content: "\f243";
+  color: #8e928f !important;
+}
+
+.level-intermediate:before {
+  content: "\f242";
+  color: #f7dba8 !important;
+}
+
+.level-advanced:before {
+  content: "\f241";
+  color: #a8cdf7 !important;
+}
+
+.level-master:before {
+  content: "\f240";
+  color: #a8f7bc !important;
 }
 
 /* Print */
@@ -562,9 +599,15 @@ section {
     text-align: justify;
   }
 
-  .section-languages .item .language {
+  .section-languages .item {
+    margin-bottom: 1rem;
+  }
+
+  .section-languages .item .language .tongue {
     font-weight: bold;
+    text-transform: uppercase;
     color: #333438 !important;
+    font-size: 1.3rem;
   }
 
   .section-languages .item .fluency {

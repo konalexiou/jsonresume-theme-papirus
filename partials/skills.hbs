@@ -5,7 +5,7 @@
 	<div class="item">
 		{{#if name}}
 		<div class="name">
-			{{name}}
+			{{name}}{{#if level}}<i title="{{level}}" class="fa level level-{{lower level}}"></i>{{/if}}
 		</div>
 		{{#if keywords.length}}
 		<div class="keywords">

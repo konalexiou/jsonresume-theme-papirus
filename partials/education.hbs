@@ -29,7 +29,11 @@
 		{{/if}}
 		{{#if institution}}
 		<div class="institution">
-			{{institution}}
+			{{#if url}}
+				<a href="{{ url }}" target="_blank">{{institution}}</a>
+			{{else}}
+				{{institution}}
+			{{/if}}
 		</div>
 		{{/if}}
 		<div class="date">

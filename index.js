@@ -30,6 +30,12 @@ function render (resume) {
         return network.toLowerCase()
       }
     },
+    lower: function (str) {
+      if(str && typeof str === "string") {
+        return str.toLowerCase();
+      }
+      return '';
+    },
     wordWrap: function (str) {
       str = str.replace(/\//g, "/ ");
       return str.replace("/ / ", "//");

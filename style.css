@@ -310,6 +310,30 @@ section {
   margin: 1rem 0 1rem 0;
 }
 
+.level {
+  padding-left: 1rem;
+}
+
+.level-beginner:before {
+  content: "\f243";
+  color: #8e928f !important;
+}
+
+.level-intermediate:before {
+  content: "\f242";
+  color: #f7dba8 !important;
+}
+
+.level-advanced:before {
+  content: "\f241";
+  color: #a8cdf7 !important;
+}
+
+.level-master:before {
+  content: "\f240";
+  color: #a8f7bc !important;
+}
+
 /* Print */
 @media print {
   body {
